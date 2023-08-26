@@ -14,7 +14,7 @@ public class ContactUi implements ListDiffInterface<ContactUi> {
     private final String photo;
     private final List<ContactType> types;
 
-    public ContactUi (
+    public ContactUi(
             @NonNull String name,
             @NonNull String phone,
             @NonNull String photo,
@@ -44,8 +44,8 @@ public class ContactUi implements ListDiffInterface<ContactUi> {
 
 
     @Override
-    public boolean theSameAs(ContactUi contactUi) {
-        return this.hashCode() == contactUi.hashCode();
+    public boolean theSameAs(ContactUi other) {
+        return this.hashCode() == other.hashCode();
     }
 
     @Override
